@@ -1,0 +1,107 @@
+.news-img-cover{
+    height:210px;
+    overflow: hidden;
+}
+.news-img-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.news-item{
+    margin-bottom:44px;
+}
+.news-info{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.news-date{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2F773A;
+    display: inline-block;
+    margin-bottom:10px;
+}
+.news-txt{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color:#000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+.news-item a{
+    text-decoration:none;
+}
+.all-news{
+    padding-top:60px;
+}
+.news-section{
+    min-height:60vh;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.head-h1{
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 38px;
+    color:#000;
+}
+.head-h1 span::after{
+    content:'';
+    display: inline-block;
+    width:100%;
+    height: 2px;
+    background: #2F773A;;
+}
+.head-h1 span{
+    display:inline-block;
+    padding-left:20px;
+    padding-right:20px;
+    line-height:24px;
+}
+.news-section .container{
+    max-width:1200px;
+}
+.news-item:hover .news-img-cover img{
+    transform:scale(1.1);
+}
+.news-item:hover .news-img-cover:hover{
+    box-shadow: 1px -1px 39px -19px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -1px 39px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 39px -19px rgba(0,0,0,0.75);
+}
+.news-item *{
+    transition:all .4s ease;
+}
+@media screen and (max-width:1200px){
+    .news-section .container{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .news-section{
+        padding-top:60px;
+        padding-bottom:32px;
+    }
+    .all-news{
+        padding-top:32px;
+    }
+}
+@media screen and (max-width:992px){
+    .news-section{
+        padding-top:40px;
+    }
+    .head-h1{
+        font-size:28px;
+    }
+    .news-item{
+        margin-bottom:28px;
+    }
+    .news-img-cover{
+        height:200px;
+    }
+}

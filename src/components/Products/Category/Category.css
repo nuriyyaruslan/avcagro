@@ -1,0 +1,259 @@
+.category-head__section{
+    height:487px;
+    overflow:hidden;
+}
+.category-head__img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.category-head--layer{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.category-head--layer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+.category-head__h4{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+    color:#fff;
+    margin-bottom:20px;
+}
+.category-head--text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color:#fff;
+    max-width:500px;
+    margin: auto;
+}
+.category-body__section{
+    background: #F6F6F6;
+    padding-top:72px;
+    padding-bottom:73px;
+}
+.category-search--block{
+    margin-bottom:32px;
+}
+.category-search--block input{
+    height:64px;
+    background:#fff;
+    width:100%;
+    padding-left:72px;
+    padding-right:24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color:#000;
+    border-radius:5px;
+    border:1px solid #fff;
+    transition:all .4s ease;
+}
+.category-search--block input:focus{
+    border-color:#20BF55;
+    outline:none;
+}
+.category-search--block img{
+    position: absolute;
+    top:20px;
+    left:24px;
+}
+.category-search--block input::placeholder {
+    color: #BFBCBC;
+    opacity: 1;
+} 
+.category-search--block input:-ms-input-placeholder {
+    color: #BFBCBC;
+} 
+.category-search--block input::-ms-input-placeholder { 
+    color: #BFBCBC;
+}
+.category-product--items .similar-item{
+    margin-left:0;
+    margin-right:0;
+}
+.category-product--items .similar-slider-item{
+    margin-bottom:32px;
+}
+.category-head--content{
+    padding-top:40px;
+}
+.category-left__dropdowns .accordion-button{
+    height:64px;
+    border-radius:5px;
+    background-color: #fff;
+    border:0;
+    padding-left:26px;
+    padding-right:38px;
+}
+.category-left__dropdowns .accordion{
+    margin-bottom:32px;
+}
+.category-left__dropdowns .accordion-button:focus,.category-left__dropdowns .accordion-button:not(.collapsed){
+    border:0;
+    outline:none;
+    box-shadow:none;
+    background: #fff;
+    color:#000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.category-left__dropdowns .accordion-item{
+    border:0;
+}
+.category-left__dropdowns .accordion-body{
+    padding-top:4px;
+    padding-left:28px;
+    padding-right:20px;
+}
+.category-items__p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #D6D6D6;
+}
+.categort-items__ul{
+    list-style: none;
+    padding-left:0;
+    margin-top:4px;
+    margin-bottom:0;
+    display:flex;
+    flex-direction: column;
+}
+.category-filter__li{
+    margin-top:4px;
+    margin-bottom: 10px;
+}
+.category-filter__li small{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color:#000;
+    margin-left:16px;
+    position:relative;
+    top:-4px;
+    transition:all .4s ease;
+}
+.category-filter__li label{
+    margin-bottom:0;
+    cursor: pointer;
+}
+.category-filter__li label:hover span{
+    color:#20BF55;
+}
+/* The container */
+.category-container{
+    display: block;
+    position: relative;
+    padding-left: 16px;
+    cursor: pointer;
+}
+/* Hide the browser's default checkbox */
+.category-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.category-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius:5px;
+    background-color: #fff;
+    border:2px solid #c6c6c6;
+}
+/* On mouse-over, add a grey background color */
+.category-container .container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.category-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.category-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.category-container .checkmark:after {
+    left: 4px;
+    top: 0;
+    width: 7px;
+    height: 11px;
+    border: solid  #20BF55;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.category-body__section .col-md-3.pr--0{
+    width:26%;
+}
+.category-body__section .col-md-9.pl--0{
+    width:74%;
+}
+.category-left__dropdowns .accordion-button::after{
+    position: absolute;
+    right:20px;
+    pointer-events:none;
+}
+.category-body__section .container{
+    max-width:1200px;
+}
+@media screen and (max-width:1200px){
+   .category-body__section{
+        padding-left:8px;
+        padding-right:8px;
+   }
+   .category-product--items .col-md-3{
+        width:calc(100% / 3);
+   }
+}
+@media screen and (max-width:992px){
+    .category-body__section .col-md-3.pr--0,.category-body__section .col-md-9.pl--0{
+        width:100%;
+    }
+    .category-product--items .col-md-3{
+        width:50%;
+    }
+   .category-body__section{
+        padding-top:32px;
+        padding-bottom:32px;
+   }
+   .category-left__dropdowns .accordion{
+        margin-bottom:16px;
+   }
+   .category-product--items .similar-slider-item{
+        margin-bottom:20px;
+   }
+   .category-head--content{
+       padding:172px 20px 20px 20px;
+   }
+   .category-head__h4{
+       font-size:26px;
+       margin-top:16px;
+   }
+   .see-all-products{
+        margin-top:24px;
+   }
+}

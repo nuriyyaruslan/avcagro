@@ -1,0 +1,38 @@
+.contact-cover{
+    height:408px;
+    margin-bottom:50px;
+    position: relative;
+    padding-top:40px;
+    padding-right:40px;
+}
+.contact-cover:before{
+    content:'';
+    display:block;
+    width: 261px;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    background:#2F773A;
+}
+.map-cover{
+    position: relative;
+    height:448px;
+    overflow:hidden;
+}
+.map-container{
+    position: static !important;
+    overflow: initial !important;
+}
+@media screen and (max-width:1200px){
+    .map-cover{
+        height:240px;
+        border-radius:8px;
+    }
+    .contact-cover{
+        height:240px;
+        margin-bottom:0;
+        padding-top: 20px;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,113 @@
+.home-about__section{
+    background: #EAEAEA;
+    padding-top:72px;
+    padding-bottom:94px;
+    position: relative;
+}
+.home-about__section::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width:20%;
+    height:100%;
+    background-color: #2F773A;
+    z-index: 0;
+}
+.home-about__section .container{
+    max-width:1200px;
+    margin: auto;
+    position: relative;
+}
+.home-about-text{
+    background: #fff;
+    border-radius: 5px;
+    padding:50px 40px;
+}
+.home-about-text h4{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color:#000;
+    margin-bottom:20px;
+}
+.home-about-content{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color:#000;
+}
+.home-about-read{
+    margin-top:20px;
+    height:56px;
+    font-size:16px;
+    color: #2F773A;
+    font-weight:500;
+    border: 1px solid #2F773A;
+    border-radius: 5px;
+    display: inline-block;
+    min-width:200px;
+    text-align:center;
+    text-decoration:none;
+    line-height: 54px;
+    transition:all .4s ease;
+}
+.home-about-read:hover{
+    background-color: #2F773A;
+    color:#fff;
+}
+.home-about-right{
+    padding-left:100px;
+}
+.home-about__img{
+    height:320px;
+    overflow:hidden;
+    border-radius:5px;
+}
+.home-about__img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.home-about__section .row{
+    align-items:center;
+}
+@media screen and (max-width:1200px){
+    .home-about-right{
+        padding-left:32px;
+    }
+}
+@media screen and (max-width:992px){
+    .home-about__section .row{
+        flex-direction: column;
+    }
+    .home-about__section::before{
+        display:none;
+    }
+    .home-about__section .col-md-7{
+        display: none;
+    }
+    .home-about__section .col-md-5{
+        width:100%;
+    }
+    .home-about__section{
+        background-color: #2F773A;
+        padding-bottom: 0;
+    }
+    .home-about-text{
+        text-align:center;
+    }
+    .home-about-text{
+        padding:32px;
+    }
+    .home-about-text h4{
+        font-size: 20px;
+    }
+    .home-about-read{
+        height:48px;
+        line-height:46px;
+    }
+    .home-about__section{
+        padding-top:56px;
+    }
+}
